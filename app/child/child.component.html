@@ -1,0 +1,11 @@
+<div class="col-md-4">
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="https://dummyimage.com/600x400/000/fff" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{title}}</h5>
+      <input type="text" class="form-control" #text placeholder="search" (keyup)="change(text.value)">
+      <p class="card-text">{{des}}</p>
+      <button class="btn btn-primary" (click)="change('2')">Go somewhere</button>
+    </div>
+  </div>
+</div>  

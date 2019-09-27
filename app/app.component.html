@@ -1,0 +1,14 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">{{heading}}</h1>
+    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <app-child [title]="title" (messageEvent)="receiver($event)"></app-child>
+      <app-sibling></app-sibling>
+    </div>
+  </div>
+  
+</div>
